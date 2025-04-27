@@ -1,0 +1,4420 @@
+{
+  "subjects": {
+    "Advanced Accounting": {
+      "chapters": {
+        "Introduction to Accounting Standards": {
+          "modules": {
+            "Introduction to Accounting Standards": {
+              "phases": {
+                "Initial": {
+                  "status": 35,
+                  "notes": "",
+                  "lAS t_updated": "",
+                  "last_updated": "2025-04-27"
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Framework of Preparation and Presentation for Financial Statements": {
+          "modules": {
+            "Framework of Preparation and Presentation for Financial Statements": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Applicability of Accounting Standards": {
+          "modules": {
+            "Applicability of Accounting Standards": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Presentation and Disclosure Based on AS": {
+          "modules": {
+            "AS 1 - Policies": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 3 - Cash Flow": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 17 -  Segment Reporting": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 18 -  Related Party Disclosures": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS  20 - Earnings per share": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 24 - Discontinuing Operations": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 25 - Interim Financial Reporting": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Assets Based Accounting Standards": {
+          "modules": {
+            "AS 2 - Valuation of Inventory": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 10 - Property, Plan and Equipment": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 13 - Accounting for Investements": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 16 - Borrowing Costs": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 19 - Leases": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 26 - Intangible assets": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 28 - Impairment of Assets": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Liabilities Based Accounting Standards": {
+          "modules": {
+            "AS 15 - Employee Benefits": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 29 - Provisions, Contingent Liabilities and Contingent Assets": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Accounting Standards Based on Items Impacting Financial Statement": {
+          "modules": {
+            "AS 4 - Contingencies and Events occuring after the Balance Sheet data": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 5 - Net profit or loss of the period, prior period items and change in accounting policies": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 11 - Effects of Change in Foreign Exchange rates": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 22 - Accounting for taxes on income": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Revenue Based Accounting Standards": {
+          "modules": {
+            "AS 7 - Construction Contracts": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 9 - Revenue Recognition": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Other Accounting Standards": {
+          "modules": {
+            "AS 12 - Accounting for government grants": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 14 - Accounting for Amalgamations": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Accounting Standardrs for Consolidated Financial Statements": {
+          "modules": {
+            "AS 21 - Consolidated Financial Statement": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 23 - Investements in Associates In Consolidated Financial Statement": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "AS 27 - Interest in Joint ventures": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Financial Statement of Companies": {
+          "modules": {
+            "Preparation of Financial Statements": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Cash flow statement": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Buyback of Securities": {
+          "modules": {
+            "Buyback of Securities": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Amalgamation of Companies": {
+          "modules": {
+            "Amalgamation of Companies": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Internal Reconstruction": {
+          "modules": {
+            "Internal Reconstruction": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Accounting for Branches including foreign branches": {
+          "modules": {
+            "Accounting for Branches including foreign branches": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Law": {
+      "chapters": {
+        "Company law and limited liabilty Partnership Law - Module 1": {
+          "modules": {
+            "Prelimnary": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Incorporation of company matters and matters incidental thereto": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Prospectus and Allotment to Securities": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Share capital and Debuntures": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Acceptance of deposits by companies": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Registration of Charges": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Company law and limited liabilty Partnership Law - Module 2": {
+          "modules": {
+            "Management and Administration": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Declaration and Payment of Dividend": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Accounts of Companies": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Audit and Auditors": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Companies Incorporated Outside India": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Company law and limited liabilty Partnership Law - Module 3": {
+          "modules": {
+            "The Limited Liability partnership act, 2008": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Other Laws": {
+          "modules": {
+            "The General Clauses Act, 1897": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Interpretation of Statuses": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "The Foregin Exchange Management Acts, 1999": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Taxation": {
+      "chapters": {
+        "Income Tax Law": {
+          "modules": {
+            "Basic Concepts": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Residence and Scope of Total Income": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Heads of Income - Salaries": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Heads of Income - Income from House Property": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Heads of Income - Profits and Gains of Business or Profession": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Heads of Income - Capital gains": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Heads of Income - Income from Other Sources": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Income of Other persons included in Assesse's Total Income": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Aggregation of Income, Set-off and Carry Forward of Losses": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Deductions from Gross Total Income": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Advance Tax, Tax Deduction at Source and Tax Collection at Source": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Provisions for filing Return of Income and Self Assessment": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Income tax Liabilty": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Goods and Services Tax": {
+          "modules": {
+            "GST in India": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Supply Under GST": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Charge of GST": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Place of Supply": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Exemptions from GST": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Time of Supply": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Value of Supply": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Input Tax Credit": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Registration": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Tax Invoices, Credit and Debit Notes": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Accounts and Records": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "E-way Bills": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Payment of Taxes": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Tax Deduction at Source and Collection of Tax at Source": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Returns": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Costing and Management": {
+      "chapters": {
+        "Module 1": {
+          "modules": {
+            "Introduction to Cost and Management Accounting": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Material Cost": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Employee Cost and Direct Expenses": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Overheads - Absorption Costing Method": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Activity Based Costing": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Cost Sheet": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Cost Accounting Systems": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Module 2": {
+          "modules": {
+            "Unit and Batch Costing": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Job Costing": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Process and Operation Costing": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Joint Products and By Products": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Service Costing": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Standard Costing": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Marginal Costing": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Budgets and Budgetary Control": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Audit and Ethics": {
+      "chapters": {
+        "Module 1": {
+          "modules": {
+            "Nature, Objective and Scope of Audit": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Audit Strategy, Audit Planning and Audit Programme": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Risk Assessment and Internal Control": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Audit Evidence": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Audit of Items of Financial Statements": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Module 2": {
+          "modules": {
+            "Audit Documentations": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Completion and Review": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Audit Report": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Special Features of Audit of Different Types of Entities": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Audit of Banks": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Ethics and Terms of Audit Engagements": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Financial Management": {
+      "chapters": {
+        "Scope and Objectives of FM": {
+          "modules": {
+            "Scope and Objectives of FM": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Types of Financing": {
+          "modules": {
+            "Types of Financing": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Financial Analysis and Planning - Ratio Analysis": {
+          "modules": {
+            "Financial Analysis and Planning - Ratio Analysis": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Cost of Capital": {
+          "modules": {
+            "Cost of Capital": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Financing Decision - Capital Structure": {
+          "modules": {
+            "Financing Decision - Capital Structure": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Financing Decisions - Leverages": {
+          "modules": {
+            "Financing Decisions - Leverages": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Investment Decisions": {
+          "modules": {
+            "Investment Decisions": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Dividend Decisions": {
+          "modules": {
+            "Dividend Decisions": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Management of Working Capital": {
+          "modules": {
+            "Introduction to Working Capital Management": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Treasury and Capital management": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Management of Inventory": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Management of Recievables": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Management of Payables": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            },
+            "Financing of Working Capital": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Strategic Management": {
+      "chapters": {
+        "Introduction to Strategic Management": {
+          "modules": {
+            "Introduction to Strategic Management": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Strategic Analysis: External Environemnt": {
+          "modules": {
+            "Strategic Analysis: External Environemnt": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Strategic Analysis: Internal Environment": {
+          "modules": {
+            "Strategic Analysis: Internal Environment": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Strategic Choices": {
+          "modules": {
+            "Strategic Choices": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        },
+        "Strategic Implementation and Evaluation": {
+          "modules": {
+            "Strategic Implementation and Evaluation": {
+              "phases": {
+                "Initial": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "MTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "RTPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Past Year QPs": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Revision": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                },
+                "Final": {
+                  "status": 0,
+                  "notes": "",
+                  "lAS t_updated": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "targets": [
+    {
+      "id": "38d15dd1-22c2-4050-983e-fdb37d895a60",
+      "date": "2025-04-27",
+      "subject": "Advanced Accounting",
+      "chapter": "Introduction to Accounting Standards",
+      "module": "Introduction to Accounting Standards",
+      "phase": "Initial",
+      "description": "",
+      "status": "Not started",
+      "explanation": "",
+      "locked": true,
+      "update_date": "2025-04-27"
+    }
+  ]
+}
