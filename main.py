@@ -410,61 +410,171 @@ def tab_progress(subject: str):
 
 # ——— Updated Targets tab with module selection ————————————————
 def tab_targets():
+    """Targets tab with fully-dynamic cascading pickers."""
     st.header("🎯 Targets")
-    add_tab, live_tab, updated_tab = st.tabs(["➕ Add target",
-                                              "🟢 Live targets",
-                                              "✅ Updated targets"])
-    with add_tab:
-        with st.expander("Create a new target"):
-            with st.form("tgt-form"):
-                due = st.date_input("Due date", date.today())
-                
-                # Get subjects from state
-                subjects = st.session_state["SUBJECTS"]
-                subj = st.selectbox("Subject", subjects)
-                
-                # Get chapters for selected subject
-                subject_chapters = st.session_state["db_state"]["subjects"][subj]["chapters"].keys()
-                chap = st.selectbox("Chapter", subject_chapters)
-                
-                # Get modules for selected chapter
-                chapter_modules = st.session_state["db_state"]["subjects"][subj]["chapters"][chap]["modules"].keys()
-                mod = st.selectbox("Module", chapter_modules)
-                
-                # Get phases for selected module
-                module_phases = st.session_state["db_state"]["subjects"][subj]["chapters"][chap]["modules"][mod]["phases"].keys()
-                phs = st.selectbox("Phase", module_phases)
-                
-                desc = st.text_area("Description: Elaborate your target of the day here")
-                if st.form_submit_button("Add"):
-                    add_target(subj, chap, mod, phs, due, desc)
-                    st.success("Target added ✅ — see it under *Live targets*")
+    add_tab, live_tab, updated_tab = st.tabs(
+        ["➕ Add target", "🟢 Live targets", "✅ Updated targets"]
+    )
 
+    # ────────────────────────── ADD TARGET ────────────────────────────
+    with add_tab:
+        st.subheader("Create a new target")
+        data = st.session_state["db_state"]
+
+        # ---- ensure cascade defaults ---------------------------------
+        if "tgt_subj" not in st.session_state:
+            st.session_state["tgt_subj"] = st.session_state["SUBJECTS"][0]
+
+        if "tgt_chap" not in st.session_state:
+            st.session_state["tgt_chap"] = next(
+                iter(data["subjects"][st.session_state["tgt_subj"]]["chapters"])
+            )
+
+        if "tgt_mod" not in st.session_state:
+            st.session_state["tgt_mod"] = next(
+                iter(
+                    data["subjects"][st.session_state["tgt_subj"]]["chapters"]
+                    [st.session_state["tgt_chap"]]["modules"]
+                )
+            )
+
+        if "tgt_phase" not in st.session_state:
+            st.session_state["tgt_phase"] = next(
+                iter(
+                    data["subjects"][st.session_state["tgt_subj"]]["chapters"]
+                    [st.session_state["tgt_chap"]]["modules"]
+                    [st.session_state["tgt_mod"]]["phases"]
+                )
+            )
+
+        # ---- callbacks ------------------------------------------------
+        def _on_subject_change():
+            s = st.session_state.tgt_subj
+            st.session_state.tgt_chap = next(iter(data["subjects"][s]["chapters"]))
+            st.session_state.tgt_mod = next(
+                iter(
+                    data["subjects"][s]["chapters"][st.session_state.tgt_chap][
+                        "modules"
+                    ]
+                )
+            )
+            st.session_state.tgt_phase = next(
+                iter(
+                    data["subjects"][s]["chapters"][st.session_state.tgt_chap][
+                        "modules"
+                    ][st.session_state.tgt_mod]["phases"]
+                )
+            )
+
+        def _on_chapter_change():
+            s, c = st.session_state.tgt_subj, st.session_state.tgt_chap
+            st.session_state.tgt_mod = next(
+                iter(data["subjects"][s]["chapters"][c]["modules"])
+            )
+            st.session_state.tgt_phase = next(
+                iter(
+                    data["subjects"][s]["chapters"][c]["modules"][
+                        st.session_state.tgt_mod
+                    ]["phases"]
+                )
+            )
+
+        def _on_module_change():
+            s, c, m = (
+                st.session_state.tgt_subj,
+                st.session_state.tgt_chap,
+                st.session_state.tgt_mod,
+            )
+            st.session_state.tgt_phase = next(
+                iter(
+                    data["subjects"][s]["chapters"][c]["modules"][m]["phases"]
+                )
+            )
+
+        # ---- widgets --------------------------------------------------
+        due = st.date_input("Due date", date.today(), key="tgt_due")
+
+        st.selectbox(
+            "Subject",
+            st.session_state["SUBJECTS"],
+            key="tgt_subj",
+            on_change=_on_subject_change,
+        )
+
+        st.selectbox(
+            "Chapter",
+            data["subjects"][st.session_state.tgt_subj]["chapters"].keys(),
+            key="tgt_chap",
+            on_change=_on_chapter_change,
+        )
+
+        st.selectbox(
+            "Module",
+            data["subjects"][st.session_state.tgt_subj]["chapters"][
+                st.session_state.tgt_chap
+            ]["modules"].keys(),
+            key="tgt_mod",
+            on_change=_on_module_change,
+        )
+
+        st.selectbox(
+            "Phase",
+            data["subjects"][st.session_state.tgt_subj]["chapters"][
+                st.session_state.tgt_chap
+            ]["modules"][st.session_state.tgt_mod]["phases"].keys(),
+            key="tgt_phase",
+        )
+
+        desc = st.text_area(
+            "Description: elaborate your target of the day here", key="tgt_desc"
+        )
+
+        if st.button("Add target"):
+            add_target(
+                st.session_state.tgt_subj,
+                st.session_state.tgt_chap,
+                st.session_state.tgt_mod,
+                st.session_state.tgt_phase,
+                st.session_state.tgt_due,
+                desc,
+            )
+            st.success("Target added ✅ — see it under *Live targets*")
+
+    # ─────────────────────────── LIVE & DONE LISTS ──────────────────────────
     targets = st.session_state["db_state"]["targets"]
     live_targets = [t for t in targets if not t.get("locked", False)]
     done_targets = [t for t in targets if t.get("locked", False)]
 
-    def render_target_list(tlist, editable: bool):
+    def render_target_list(tlist, editable: bool, radio_key: str):
         if not tlist:
-            st.info("Nothing here yet."); return
-        order = st.radio("Sort by date",
-                         ["Earliest first", "Latest first"],
-                         horizontal=True, key=f"order-{editable}")
-        rev = (order == "Latest first")
-        for idx, tgt in enumerate(sorted(tlist,
-                                         key=lambda x: x["date"],
-                                         reverse=rev)):
-            label = (f"📌 {tgt['subject']} – {tgt['chapter']} – "
-                     f"{tgt.get('module', 'N/A')} – {tgt['phase']} (due {tgt['date']})")
+            st.info("Nothing here yet.")
+            return
+        order = st.radio(
+            "Sort by date",
+            ["Earliest first", "Latest first"],
+            horizontal=True,
+            key=radio_key,
+        )
+        rev = order == "Latest first"
+        for idx, tgt in enumerate(sorted(tlist, key=lambda x: x["date"], reverse=rev)):
+            label = (
+                f"📌 {tgt['subject']} – {tgt['chapter']} – "
+                f"{tgt.get('module','N/A')} – {tgt['phase']} (due {tgt['date']})"
+            )
             with st.expander(label):
                 st.write(tgt["description"])
                 if editable:
-                    status = st.radio("Status", TARGET_STATUS,
-                                      TARGET_STATUS.index(tgt["status"]),
-                                      key=f"stat-{idx}")
-                    expl = st.text_area("Explanation / topics covered",
-                                        tgt["explanation"],
-                                        key=f"expl-{idx}")
+                    status = st.radio(
+                        "Status",
+                        TARGET_STATUS,
+                        TARGET_STATUS.index(tgt["status"]),
+                        key=f"stat-{idx}",
+                    )
+                    expl = st.text_area(
+                        "Explanation / topics covered",
+                        tgt["explanation"],
+                        key=f"expl-{idx}",
+                    )
                     if st.button("Save", key=f"save-{idx}"):
                         update_target(targets.index(tgt), status, expl)
                         st.rerun()
@@ -472,16 +582,20 @@ def tab_targets():
                     st.markdown(f"**Description:** {tgt['description']}")
                     st.markdown(
                         f"**Target:** {tgt['subject']} – {tgt['chapter']} – "
-                        f"{tgt.get('module', 'N/A')} – {tgt['phase']} (due {tgt['date']})"
+                        f"{tgt.get('module','N/A')} – {tgt['phase']} (due {tgt['date']})"
                     )
-                    st.markdown(f"**Explanation:** {tgt['explanation'] or '_none_'}")
+                    st.markdown(
+                        f"**Explanation:** {tgt['explanation'] or '_none_'}"
+                    )
                     st.info(f"Status: {tgt['status']}")
-                    st.caption(f"Last updated : {tgt.get('update_date', '—')}")
+                    st.caption(f"Last updated : {tgt.get('update_date','—')}")
 
     with live_tab:
-        render_target_list(live_targets, editable=True)
+        render_target_list(live_targets, editable=True, radio_key="order-live")
     with updated_tab:
-        render_target_list(done_targets, editable=False)
+        render_target_list(
+            done_targets, editable=False, radio_key="order-done"
+        )
 
 # ——— Updated Visuals tab with module level ————————————————————————————————
 def tab_visuals():
