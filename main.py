@@ -751,13 +751,14 @@ def render_app():
             st.session_state["selected_tab"] = subj
             tab_progress(subj)
 
-        with tabs[-2]:
-            st.session_state["selected_tab"] = "Targets"
-            tab_targets()
+    with tabs[-2]:
+        st.session_state["selected_tab"] = "Targets"
+        tab_targets()
 
-        with tabs[-1]:
-            st.session_state["selected_tab"] = "Visualizations"
-            tab_visuals()
+    with tabs[-1]:
+        st.session_state["selected_tab"] = "Visualizations"
+        tab_visuals()
+
 
 
 # ── Run app ──────────────────────────────────────────────────────────────────
