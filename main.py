@@ -540,8 +540,7 @@ def tab_targets():
         # Create a specific callback for date changes
         def on_date_change():
             # Store the selected tab to prevent redirection
-            if "selected_tab" not in st.session_state:
-                st.session_state["selected_tab"] = "Targets"
+            st.session_state["selected_tab"] = "Targets"
 
         # Use the date input with the callback
         due = st.date_input(
