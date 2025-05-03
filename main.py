@@ -738,28 +738,37 @@ def tab_visuals():
         st.info("No targets defined yet.")
 
 # ── Main rendering ───────────────────────────────────────────────────────────
+# Replace the render_app() function with this corrected version:
+
 def render_app():
     ensure_state()
     subjects = st.session_state["SUBJECTS"]
     tab_labels = subjects + ["Targets", "Visualizations"]
+    
+    # Get the currently selected tab from session state, default to "Targets"
     selected_tab = st.session_state.get("selected_tab", "Targets")
+    
+    # Calculate the index of the selected tab
     tab_index = tab_labels.index(selected_tab)
+    
+    # Create tabs with the selected tab active
     tabs = st.tabs(tab_labels)
-
-    for i, subj in enumerate(subjects):
+    
+    # Process each tab
+    for i, tab_name in enumerate(tab_labels):
         with tabs[i]:
-            st.session_state["selected_tab"] = subj
-            tab_progress(subj)
-
-    with tabs[-2]:
-        st.session_state["selected_tab"] = "Targets"
-        tab_targets()
-
-    with tabs[-1]:
-        st.session_state["selected_tab"] = "Visualizations"
-        tab_visuals()
-
-
+            # Only update the session state if we're actually in this tab
+            # This prevents the first subject from always being selected during reruns
+            if i == tab_index:
+                st.session_state["selected_tab"] = tab_name
+            
+            # Render the appropriate content based on the tab type
+            if i < len(subjects):  # Subject tabs
+                tab_progress(subjects[i])
+            elif tab_name == "Targets":
+                tab_targets()
+            elif tab_name == "Visualizations":
+                tab_visuals()
 
 # ── Run app ──────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
