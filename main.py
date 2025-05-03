@@ -169,6 +169,10 @@ def ensure_state():
             first_module = list(data["subjects"][subj]["chapters"][chap]["modules"].keys())[0]
             st.session_state.setdefault(f"selected_mod_{subj}_{chap}", first_module)
 
+    # ✅ Fix: Preserve initially selected tab (to avoid fallback on widget rerun)
+    if "selected_tab" not in st.session_state:
+        st.session_state["selected_tab"] = "Targets"
+
 # Constants for target status
 TARGET_STATUS = ["Not started", "<50% done", ">50% done", "Fully achieved"]
 STATUS_TO_PCT = dict(zip(TARGET_STATUS, [0, 25, 75, 100]))
