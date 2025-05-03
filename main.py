@@ -9,6 +9,10 @@ import tempfile, os
 import requests  # Already imported
 import base64
 
+import logging
+logging.basicConfig(level=logging.DEBUG, format="%(asctime)s  %(message)s")
+log = logging.getLogger("debug")
+
 def get_base64_encoded_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
@@ -748,37 +752,34 @@ def tab_visuals():
         st.info("No targets defined yet.")
 # ── NEW helper: force‑select the remembered tab on every rerun ────────────────
 # ── Helper to remember that we want to stay on Targets ───────────────────────
+
 def _stay_on_targets():
-    st.session_state["selected_tab"] = "Targets"   # will be used by the JS fixer
+    # Called by every widget that should keep us on the Targets tab
+    log.debug("→ _stay_on_targets() called  — setting selected_tab = 'Targets'")
+    st.session_state["selected_tab"] = "Targets"
 
 
-def _restore_active_tab() -> None:
-    """
-    After every rerun, click the tab whose label is stored in
-    st.session_state['selected_tab'] (defaults to "Targets").
-
-    Works on Streamlit Cloud and local installs ≥ 1.29
-    """
+def _restore_active_tab():
     active = st.session_state.get("selected_tab", "Targets")
+    log.debug(f"→ _restore_active_tab() injecting JS for tab = {active}")
 
     st.markdown(
         f"""
         <script>
         const desired = `{active}`;
+        console.log("JS helper loaded — desired tab:", desired);
 
         function clickDesiredTab() {{
-            // Tabs are <button role="tab">…innerText…</button>
-            const buttons = Array.from(document.querySelectorAll('button[role="tab"]'));
-            const btn = buttons.find(b => b.textContent.trim() === desired);
-            if (btn) {{
-                btn.click();
+            const btns = Array.from(document.querySelectorAll('button[role="tab"]'));
+            const match = btns.find(b => b.textContent.trim() === desired);
+            if (match) {{
+                console.log("Found tab button, clicking:", match.textContent.trim());
+                match.click();
             }} else {{
-                // DOM not ready yet—try again in 50 ms
+                console.log("Tab button not found yet, retrying…");
                 setTimeout(clickDesiredTab, 50);
             }}
         }}
-
-        // kick it off
         clickDesiredTab();
         </script>
         """,
@@ -790,6 +791,11 @@ def _restore_active_tab() -> None:
 
 def render_app():
     ensure_state()
+    st.write(
+    "DEBUG · selected_tab:", st.session_state.get("selected_tab"),
+    " —  time:", date.today().isoformat()
+)
+
     subjects = st.session_state["SUBJECTS"]
     tab_labels = subjects + ["Targets", "Visualizations"]
 
