@@ -537,6 +537,13 @@ def tab_targets():
         if "tgt_due" not in st.session_state:
             st.session_state["tgt_due"] = date.today()
 
+        due = st.date_input(
+        "Due date",
+        value=st.session_state.get("tgt_due", date.today()),
+        key="tgt_due",
+        on_change=_stay_on_targets
+    )
+
         
 
 
@@ -545,33 +552,35 @@ def tab_targets():
             "Subject",
             st.session_state["SUBJECTS"],
             key="tgt_subj",
-            on_change=_on_subject_change,
+            on_change=lambda: (_on_subject_change(), _stay_on_targets())
         )
 
+        # Chapter picker
         st.selectbox(
             "Chapter",
             data["subjects"][st.session_state.tgt_subj]["chapters"].keys(),
             key="tgt_chap",
-            on_change=_on_chapter_change,
+            on_change=lambda: (_on_chapter_change(), _stay_on_targets())
         )
 
+        # Module picker
         st.selectbox(
             "Module",
-            data["subjects"][st.session_state.tgt_subj]["chapters"][
-                st.session_state.tgt_chap
-            ]["modules"].keys(),
+            data["subjects"][st.session_state.tgt_subj]["chapters"]
+                [st.session_state.tgt_chap]["modules"].keys(),
             key="tgt_mod",
-            on_change=_on_module_change,
+            on_change=lambda: (_on_module_change(), _stay_on_targets())
         )
 
+        # Phase picker (no cascade needed here, but keep tab memory just in case)
         st.selectbox(
             "Phase",
-            data["subjects"][st.session_state.tgt_subj]["chapters"][
-                st.session_state.tgt_chap
-            ]["modules"][st.session_state.tgt_mod]["phases"].keys(),
+            data["subjects"][st.session_state.tgt_subj]["chapters"]
+                [st.session_state.tgt_chap]["modules"]
+                [st.session_state.tgt_mod]["phases"].keys(),
             key="tgt_phase",
+            on_change=_stay_on_targets
         )
-
         desc = st.text_area(
             "Description: elaborate your target of the day here", key="tgt_desc"
         )
@@ -738,6 +747,10 @@ def tab_visuals():
     else:
         st.info("No targets defined yet.")
 # ── NEW helper: force‑select the remembered tab on every rerun ────────────────
+# ── Helper to remember that we want to stay on Targets ───────────────────────
+def _stay_on_targets():
+    st.session_state["selected_tab"] = "Targets"   # will be used by the JS fixer
+
 def _restore_active_tab():
     """Re‑click the tab whose label is st.session_state['selected_tab']."""
     active = st.session_state.get("selected_tab", "Targets")
