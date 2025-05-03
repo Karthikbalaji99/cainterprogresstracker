@@ -452,9 +452,7 @@ def tab_progress(subject: str):
 def tab_targets():
     """Targets tab with fully-dynamic cascading pickers."""
     st.header("🎯 Targets")
-    add_tab, live_tab, updated_tab = st.tabs(
-        ["➕ Add target", "🟢 Live targets", "✅ Updated targets"]
-    )
+    add_tab, live_tab, updated_tab = st.tabs(["➕ Add target", "🟢 Live targets", "✅ Updated targets"], key="targets_subtabs")
 
     # ────────────────────────── ADD TARGET ────────────────────────────
     with add_tab:
