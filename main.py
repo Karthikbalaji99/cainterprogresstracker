@@ -452,7 +452,9 @@ def tab_progress(subject: str):
 def tab_targets():
     """Targets tab with fully-dynamic cascading pickers."""
     st.header("🎯 Targets")
-    add_tab, live_tab, updated_tab = st.tabs(["➕ Add target", "🟢 Live targets", "✅ Updated targets"], key="targets_subtabs")
+    add_tab, live_tab, updated_tab = st.tabs(
+        ["➕ Add target", "🟢 Live targets", "✅ Updated targets"]
+    )
 
     # ────────────────────────── ADD TARGET ────────────────────────────
     with add_tab:
@@ -535,10 +537,12 @@ def tab_targets():
         if "tgt_due" not in st.session_state:
             st.session_state["tgt_due"] = date.today()
 
-        # Create a specific callback for date changes
         def on_date_change():
-            # Store the selected tab to prevent redirection
+            # Store the selected tab to prevent fallback
             st.session_state["selected_tab"] = "Targets"
+            # Immediately re-draw with Targets as the active tab
+            st.experimental_rerun()
+
 
         # Use the date input with the callback
         due = st.date_input(
