@@ -532,10 +532,24 @@ def tab_targets():
             )
 
         # ---- widgets --------------------------------------------------
+        # --- Handle tab preservation with date input ---
+        # Initialize date state before the widget is created
         if "tgt_due" not in st.session_state:
             st.session_state["tgt_due"] = date.today()
 
-        due = st.date_input("Due date", key="tgt_due")
+        # Create a specific callback for date changes
+        def on_date_change():
+            # Store the selected tab to prevent redirection
+            if "selected_tab" not in st.session_state:
+                st.session_state["selected_tab"] = "Targets"
+
+        # Use the date input with the callback
+        due = st.date_input(
+            "Due date", 
+            value=st.session_state["tgt_due"],
+            key="tgt_due",
+            on_change=on_date_change
+)
 
 
 
