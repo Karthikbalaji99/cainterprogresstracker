@@ -532,11 +532,11 @@ def tab_targets():
             )
 
         # ---- widgets --------------------------------------------------
-        if "tgt_due" not in st.session_state:
-            st.session_state["tgt_due"] = date.today()
+        if "tgt_due_widget" not in st.session_state:
+            st.session_state["tgt_due_widget"] = date.today()
 
-        due = st.date_input("Due date", st.session_state.get("tgt_due", date.today()), key="tgt_due_widget")
-        st.session_state["tgt_due"] = due
+        due = st.date_input("Due date", key="tgt_due_widget")
+
 
 
 
