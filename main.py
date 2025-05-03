@@ -6,6 +6,7 @@ import altair as alt
 import json
 from pathlib import Path
 import tempfile, os
+from datetime import datetime
 import requests  # Already imported
 import base64
 
@@ -531,27 +532,12 @@ def tab_targets():
                 )
             )
 
-        # ---- widgets --------------------------------------------------
-        # --- Handle tab preservation with date input ---
-        # Initialize date state before the widget is created
-        if "tgt_due" not in st.session_state:
-            st.session_state["tgt_due"] = date.today()
-
-        def on_date_change():
-            # Store the selected tab to prevent fallback
-            st.session_state["selected_tab"] = "Targets"
-            # Immediately re-draw with Targets as the active tab
-            st.experimental_rerun()
-
-
-        # Use the date input with the callback
-        due = st.date_input(
-            "Due date", 
-            value=st.session_state["tgt_due"],
-            key="tgt_due",
-            on_change=on_date_change
+        due_str = st.text_input(
+    "Due date (dd/mm/yyyy)",
+    value=st.session_state.get("tgt_due_str", ""),
+    placeholder="e.g. 14/05/2025",
+    key="tgt_due_str"
 )
-
 
 
 
@@ -591,15 +577,28 @@ def tab_targets():
         )
 
         if st.button("Add target"):
-            add_target(
-                st.session_state.tgt_subj,
-                st.session_state.tgt_chap,
-                st.session_state.tgt_mod,
-                st.session_state.tgt_phase,
-                st.session_state.tgt_due,
-                desc,
-            )
-            st.success("Target added ✅ — see it under *Live targets*")
+            # Parse the user’s date string
+            try:
+                due_date = datetime.strptime(due_str, "%d/%m/%Y").date()
+            except ValueError:
+                st.error("❌ Please enter date as dd/mm/yyyy (e.g. 14/05/2025).")
+            else:
+                # Store the raw string so it persists if they revisit
+                st.session_state["tgt_due_str"] = due_str
+
+                add_target(
+                    st.session_state.tgt_subj,
+                    st.session_state.tgt_chap,
+                    st.session_state.tgt_mod,
+                    st.session_state.tgt_phase,
+                    due_date,
+                    desc,
+                )
+                st.success("Target added ✅ — see it under *Live targets*")
+                # Keep the Targets tab active
+                st.session_state["selected_tab"] = "Targets"
+
+
 
     # ─────────────────────────── LIVE & DONE LISTS ──────────────────────────
     targets = st.session_state["db_state"]["targets"]
