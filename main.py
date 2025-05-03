@@ -36,9 +36,10 @@ html, body, [data-testid="stApp"] {{
     background-position: center center;
 }}
 
-div[data-baseweb="tab-list"]        {{ justify-content: space-between !important; }}
-div[data-baseweb="tab"]             {{ flex: 1 !important; font-weight: 700 !important; }}
-div[data-baseweb="tab"] button p    {{ color: white !important; }}
+/* hide the “Navigation” label above the fake-tabs */
+label[for="nav_radio"] {{
+    display: none !important;
+}}
 </style>
 
 <h1 style='text-align:center; margin-top:0.5rem; color:white;'>
@@ -759,32 +760,6 @@ def _stay_on_targets():
     st.session_state["selected_tab"] = "Targets"
 
 
-def _restore_active_tab():
-    active = st.session_state.get("selected_tab", "Targets")
-    log.debug(f"→ _restore_active_tab() injecting JS for tab = {active}")
-
-    st.markdown(
-        f"""
-        <script>
-        const desired = `{active}`;
-        console.log("JS helper loaded — desired tab:", desired);
-
-        function clickDesiredTab() {{
-            const btns = Array.from(document.querySelectorAll('button[role="tab"]'));
-            const match = btns.find(b => b.textContent.trim() === desired);
-            if (match) {{
-                console.log("Found tab button, clicking:", match.textContent.trim());
-                match.click();
-            }} else {{
-                console.log("Tab button not found yet, retrying…");
-                setTimeout(clickDesiredTab, 50);
-            }}
-        }}
-        clickDesiredTab();
-        </script>
-        """,
-        unsafe_allow_html=True,
-    )
 
 # ── Main rendering ───────────────────────────────────────────────────────────
 # Replace the render_app() function with this corrected version:
@@ -796,31 +771,28 @@ def render_app():
     " —  time:", date.today().isoformat()
 )
 
+    # ---------- NEW top‑level navigation (radio looks like tabs) ----------
     subjects = st.session_state["SUBJECTS"]
-    tab_labels = subjects + ["Targets", "Visualizations"]
+    nav_items = subjects + ["Targets", "Visualizations"]
 
-    # 1️⃣ pull remembered tab (default: Targets)
-    tab_index = tab_labels.index(st.session_state.get("selected_tab", "Targets"))
+    active = st.radio(
+        "Navigation",            # label hidden with CSS later
+        nav_items,
+        horizontal=True,
+        index=nav_items.index(st.session_state.get("selected_tab", "Targets")),
+        key="nav_radio",
+    )
 
-    # build tabs
-    tabs = st.tabs(tab_labels)
+    st.session_state["selected_tab"] = active      # remember choice
+    # ----------------------------------------------------------------------
 
-    # 2️⃣ inject JS right after tabs are created
-    _restore_active_tab()
+    if active in subjects:
+        tab_progress(active)
+    elif active == "Targets":
+        tab_targets()
+    else:  # Visualizations
+        tab_visuals()
 
-    # normal per‑tab rendering
-    for i, tab_name in enumerate(tab_labels):
-        with tabs[i]:
-            # keep the memory updated with whichever tab Streamlit thinks is active
-            if i == tab_index:
-                st.session_state["selected_tab"] = tab_name
-
-            if i < len(subjects):
-                tab_progress(subjects[i])
-            elif tab_name == "Targets":
-                tab_targets()
-            elif tab_name == "Visualizations":
-                tab_visuals()
 
 # ── Run app ──────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
