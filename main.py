@@ -6,6 +6,7 @@ import altair as alt
 import json
 from pathlib import Path
 import tempfile, os
+import requests  # Already imported
 import base64
 
 def get_base64_encoded_image(image_path):
@@ -58,24 +59,47 @@ def _load_base_state() -> dict:
     # Fallback structure if base_state.json doesn't exist or is corrupted
 
 def _load_state_from_file() -> dict:
-    """Load progress data from file or initialize with base state"""
-    if DATA_PATH.exists():
-        try:
-            with open(DATA_PATH, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except json.JSONDecodeError:
-            st.warning("⚠️  progress.json was corrupted. Starting with base state.")
-    
-    # If progress.json doesn't exist or is corrupted, load from base state
-    return _load_base_state()
+    secrets = st.secrets["github"]
+    headers = {
+        "Authorization": f"Bearer {secrets['token']}",
+        "Accept": "application/vnd.github+json"
+    }
+    url = f"https://api.github.com/repos/{secrets['repo']}/contents/{secrets['file_path']}?ref={secrets['branch']}"
+
+    response = requests.get(url, headers=headers)
+    if response.status_code == 200:
+        content = base64.b64decode(response.json()["content"])
+        return json.loads(content)
+    else:
+        st.warning("⚠️ Could not load progress.json from GitHub. Using base state.")
+        return _load_base_state()
 
 def _save_state_to_file() -> None:
-    """Save current state to progress.json"""
-    tmp = tempfile.NamedTemporaryFile("w", delete=False,
-                                      dir=DATA_PATH.parent, encoding="utf-8")
-    json.dump(st.session_state["db_state"], tmp, indent=2)
-    tmp.flush(); os.fsync(tmp.fileno()); tmp.close()
-    os.replace(tmp.name, DATA_PATH)
+    secrets = st.secrets["github"]
+    headers = {
+        "Authorization": f"Bearer {secrets['token']}",
+        "Accept": "application/vnd.github+json"
+    }
+    url = f"https://api.github.com/repos/{secrets['repo']}/contents/{secrets['file_path']}"
+
+    # Get file SHA first
+    get_resp = requests.get(url, headers=headers)
+    if get_resp.status_code != 200:
+        st.error("❌ Could not get file SHA from GitHub")
+        return
+
+    sha = get_resp.json()["sha"]
+
+    payload = {
+        "message": "Update progress.json via Streamlit",
+        "content": base64.b64encode(json.dumps(st.session_state["db_state"], indent=2).encode("utf-8")).decode("utf-8"),
+        "branch": secrets["branch"],
+        "sha": sha
+    }
+
+    put_resp = requests.put(url, headers=headers, json=payload)
+    if put_resp.status_code not in (200, 201):
+        st.error("❌ Failed to update progress.json on GitHub")
 
 # ── Session-state bootstrap ──────────────────────────────────────────────────
 def ensure_state():
