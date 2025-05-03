@@ -537,19 +537,7 @@ def tab_targets():
         if "tgt_due" not in st.session_state:
             st.session_state["tgt_due"] = date.today()
 
-        # Create a specific callback for date changes
-        def on_date_change():
-            # Store the selected tab to prevent redirection
-            st.session_state["selected_tab"] = "Targets"
-
-        # Use the date input with the callback
-        due = st.date_input(
-            "Due date", 
-            value=st.session_state["tgt_due"],
-            key="tgt_due",
-            on_change=on_date_change
-)
-
+        
 
 
 
