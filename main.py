@@ -6,7 +6,7 @@ import altair as alt
 import json
 from pathlib import Path
 import tempfile, os
-import requests  # Already imported
+import requests
 import base64
 
 def get_base64_encoded_image(image_path):
@@ -17,7 +17,6 @@ def get_base64_encoded_image(image_path):
 st.set_page_config(page_title="Study Progress Tracker", layout="wide")
 # ── Page heading ─────────────────────────────────────────────────────────────
 st.title("CA INTER PROGRESS TRACKER")
-
 
 # ── Global CSS, background and main heading ───────────────────────────────────
 background_image = get_base64_encoded_image("background.jpg")
@@ -55,7 +54,7 @@ def _load_base_state() -> dict:
                 return base_state
         except json.JSONDecodeError:
             st.warning("⚠️  base_state.json is corrupted. Using fallback structure.")
-    
+
     # Fallback structure if base_state.json doesn't exist or is corrupted
 
 def _load_state_from_file() -> dict:
@@ -118,26 +117,26 @@ def ensure_state():
     """Initialize session state and extract structure info"""
     if "db_state" not in st.session_state:
         st.session_state["db_state"] = _load_state_from_file()
-    
+
     # Extract subjects, chapters, modules, and phases from the loaded state
     data = st.session_state["db_state"]
-    
+
     # Extract all subjects, chapters, modules, and phases
     all_subjects = list(data["subjects"].keys())
-    
+
     # Extract all unique chapter names across all subjects
     all_chapters = set()
     for subj in all_subjects:
         all_chapters.update(data["subjects"][subj]["chapters"].keys())
     all_chapters = list(all_chapters)
-    
+
     # Extract all unique module names across all subjects and chapters
     all_modules = set()
     for subj in all_subjects:
         for chap in data["subjects"][subj]["chapters"]:
             all_modules.update(data["subjects"][subj]["chapters"][chap]["modules"].keys())
     all_modules = list(all_modules)
-    
+
     # Extract all unique phase names
     all_phases = set()
     for subj in all_subjects:
@@ -145,13 +144,13 @@ def ensure_state():
             for mod in data["subjects"][subj]["chapters"][chap]["modules"]:
                 all_phases.update(data["subjects"][subj]["chapters"][chap]["modules"][mod]["phases"].keys())
     all_phases = list(all_phases)
-    
+
     # Store these lists in session state for use throughout the app
     st.session_state["SUBJECTS"] = all_subjects
     st.session_state["CHAPTERS"] = all_chapters
     st.session_state["MODULES"] = all_modules
     st.session_state["PHASES"] = all_phases
-    
+
     # Initialize visualization state
     st.session_state.setdefault("viz_level", "subject")
     st.session_state.setdefault("viz_path", [])
@@ -163,7 +162,7 @@ def ensure_state():
     for subj in all_subjects:
         first_chapter = list(data["subjects"][subj]["chapters"].keys())[0]
         st.session_state.setdefault(f"selected_{subj}", first_chapter)
-        
+
         # Remember selected module for each chapter in each subject
         for chap in data["subjects"][subj]["chapters"].keys():
             first_module = list(data["subjects"][subj]["chapters"][chap]["modules"].keys())[0]
@@ -226,10 +225,9 @@ def pct_subject(subject: str) -> float:          # ← return a float
 
     return round(sum(vals) / len(vals), 1)       # keep one decimal place
 
-
 def pct_chapter(subject: str, chapter: str) -> int:
     modules = st.session_state["db_state"]["subjects"][subject]["chapters"][chapter]["modules"]
-    vals = [ph["status"] for mod in modules.values() 
+    vals = [ph["status"] for mod in modules.values()
             for ph in mod["phases"].values()]
     return int(sum(vals) / len(vals)) if vals else 0
 
@@ -244,23 +242,23 @@ def get_chart_data():
     if level == "subject":
         # Use completion percentage for subjects (not distribution)
         return pd.DataFrame([{
-            "name": s, 
+            "name": s,
             "value": pct_subject(s),  # This is the completion percentage
             "id": s
         } for s in st.session_state["SUBJECTS"]])
     elif level == "chapter":
         subj = st.session_state["viz_subject"]
         return pd.DataFrame([{
-            "name": c, 
-            "value": pct_chapter(subj, c), 
+            "name": c,
+            "value": pct_chapter(subj, c),
             "id": f"{subj}|{c}"
         } for c in st.session_state["db_state"]["subjects"][subj]["chapters"].keys()])
     elif level == "module":
         subj = st.session_state["viz_subject"]
         chap = st.session_state["viz_chapter"]
         return pd.DataFrame([{
-            "name": m, 
-            "value": pct_module(subj, chap, m), 
+            "name": m,
+            "value": pct_module(subj, chap, m),
             "id": f"{subj}|{chap}|{m}"
         } for m in st.session_state["db_state"]["subjects"][subj]["chapters"][chap]["modules"].keys()])
     else:  # phase level
@@ -268,12 +266,12 @@ def get_chart_data():
         chap = st.session_state["viz_chapter"]
         mod = st.session_state["viz_module"]
         data = [{
-            "name": ph, 
+            "name": ph,
             "value": st.session_state["db_state"]["subjects"][subj]["chapters"][chap]["modules"][mod]["phases"][ph]["status"],
             "id": f"{subj}|{chap}|{mod}|{ph}"
         } for ph in st.session_state["db_state"]["subjects"][subj]["chapters"][chap]["modules"][mod]["phases"].keys()]
         return pd.DataFrame(data)
-      
+
 def generate_color_scale(level, items):
     """Generate a color scale for a set of items with unique colors"""
     # More distinct color palettes for each level
@@ -283,32 +281,32 @@ def generate_color_scale(level, items):
         "module": ["#d5a6bd", "#b4a7d6", "#9fc5e8", "#76a5af", "#6fa8dc", "#ffe599", "#a2c4c9", "#d9ead3", "#fce5cd", "#d9d2e9"],
         "phase": ["#6fa8dc", "#9fc5e8", "#cfe2f3", "#f9cb9c", "#ead1dc", "#d9d2e9", "#c27ba0", "#e06666", "#f4cccc", "#b6d7a8"]
     }
-    
+
     # Use the appropriate color palette for the level
     level_colors = colors.get(level, colors["subject"])
-    
+
     # Make sure we have enough colors, without repeating if possible
     if len(items) > len(level_colors):
         # If we need more colors than available, we'll need to create more
         import colorsys
-        
+
         # Generate additional HSV colors with good spacing
         n_additional = len(items) - len(level_colors)
         additional_colors = []
         for i in range(n_additional):
             h = i / n_additional
-            s = 0.7  # Medium-high saturation 
+            s = 0.7  # Medium-high saturation
             v = 0.9  # High value/brightness
             r, g, b = colorsys.hsv_to_rgb(h, s, v)
             hex_color = f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
             additional_colors.append(hex_color)
-        
+
         # Combine original palette with additional colors
         all_colors = level_colors + additional_colors
     else:
         # We have enough colors in our palette
         all_colors = level_colors
-    
+
     # Create a domain-range mapping for the scale
     return alt.Scale(domain=list(items), range=all_colors[:len(items)])
 
@@ -331,7 +329,7 @@ def interactive_pie_chart():
         chap = st.session_state["viz_chapter"]
         mod = st.session_state["viz_module"]
         items = st.session_state["db_state"]["subjects"][subj]["chapters"][chap]["modules"][mod]["phases"].keys()
-    
+
     color_scale = generate_color_scale(level, items)
 
     # single-point hover selection
@@ -348,7 +346,7 @@ def interactive_pie_chart():
         .mark_arc(innerRadius=70, outerRadius=100)
         .encode(
             theta=alt.Theta(field="value", type="quantitative", stack=True),  # Stack ensures proper chart
-            color=alt.Color("name:N", scale=color_scale, 
+            color=alt.Color("name:N", scale=color_scale,
                           legend=alt.Legend(title=level.capitalize(), orient="right")),
             tooltip=tooltip,
             opacity=alt.condition(hover, alt.value(1), alt.value(0.8))
@@ -418,18 +416,18 @@ def tab_progress(subject: str):
     # right: module selector and three phase widgets for chosen module
     with right:
         st.subheader(f"{chosen_chapter} ▶ Modules")
-        
+
         # Get modules for this chapter
         chapter_modules = st.session_state["db_state"]["subjects"][subject]["chapters"][chosen_chapter]["modules"].keys()
-        
+
         # Module selector
         mod_key = f"selected_mod_{subject}_{chosen_chapter}"
         default_module = st.session_state.get(mod_key, list(chapter_modules)[0])
-        chosen_module = st.selectbox("Select Module and Update the Phases", chapter_modules, 
+        chosen_module = st.selectbox("Select Module and Update the Phases", chapter_modules,
                                     index=list(chapter_modules).index(default_module) if default_module in chapter_modules else 0,
                                     key=f"mod-selector-{subject}-{chosen_chapter}")
         st.session_state[mod_key] = chosen_module
-        
+
         # Display module completion
         mod_pct = pct_module(subject, chosen_chapter, chosen_module)
         col1, col2 = st.columns([6,1])  # Wide bar + narrow text
@@ -438,15 +436,13 @@ def tab_progress(subject: str):
         with col2:
             st.markdown(f"**{mod_pct:.1f}%**")  # Show percentage neatly
 
-        
         # Get phases for this module
         module_phases = st.session_state["db_state"]["subjects"][subject]["chapters"][chosen_chapter]["modules"][chosen_module]["phases"].keys()
-        
+
         # Phase widgets for selected module
         st.subheader("Phases")
         for ph in module_phases:
             phase_widget(subject, chosen_chapter, chosen_module, ph)
-
 
 # ——— Updated Targets tab with module selection ————————————————
 def tab_targets():
@@ -544,14 +540,11 @@ def tab_targets():
 
         # Use the date input with the callback
         due = st.date_input(
-            "Due date", 
+            "Due date",
             value=st.session_state["tgt_due"],
             key="tgt_due",
             on_change=on_date_change
-)
-
-
-
+        )
 
         st.selectbox(
             "Subject",
@@ -679,29 +672,29 @@ def tab_visuals():
 
     # Get data for current level
     df = get_chart_data()
-    
+
     # For better button placement, use a grid layout
     # Calculate how many buttons per row based on data length
     items_per_row = min(4, len(df))  # Max 4 buttons per row
     num_rows = (len(df) + items_per_row - 1) // items_per_row  # Ceiling division
-    
+
     # Create buttons in a grid
     st.write("**Select to drill down:**")
-    
+
     # Create rows
     for row_idx in range(num_rows):
         # Create columns for this row
         cols = st.columns(items_per_row)
-        
+
         # Fill columns with buttons for this row
         for col_idx in range(items_per_row):
             item_idx = row_idx * items_per_row + col_idx
-            
+
             # Check if we still have items to display
             if item_idx < len(df):
                 row = df.iloc[item_idx]
                 with cols[col_idx]:
-                    if st.button(f"{row['name']}", 
+                    if st.button(f"{row['name']}",
                                 key=f"select-{row['id']}",
                                 use_container_width=True):
                         lvl = st.session_state["viz_level"]
@@ -733,7 +726,7 @@ def tab_visuals():
     st.markdown("---")
     st.subheader("Target Status Distribution")
     tgt = st.session_state["db_state"]["targets"]
- 
+
     if tgt:
         counts = {s: 0 for s in TARGET_STATUS}
         for t in tgt: counts[t["status"]] += 1
@@ -751,22 +744,20 @@ def tab_visuals():
         st.info("No targets defined yet.")
 
 # ── Main rendering ───────────────────────────────────────────────────────────
-# Replace the render_app() function with this corrected version:
-
 def render_app():
     ensure_state()
     subjects = st.session_state["SUBJECTS"]
     tab_labels = subjects + ["Targets", "Visualizations"]
-    
+
     # Get the currently selected tab from session state, default to "Targets"
     selected_tab = st.session_state.get("selected_tab", "Targets")
-    
+
     # Calculate the index of the selected tab
     tab_index = tab_labels.index(selected_tab)
-    
+
     # Create tabs with the selected tab active
     tabs = st.tabs(tab_labels)
-    
+
     # Process each tab
     for i, tab_name in enumerate(tab_labels):
         with tabs[i]:
@@ -774,7 +765,7 @@ def render_app():
             # This prevents the first subject from always being selected during reruns
             if i == tab_index:
                 st.session_state["selected_tab"] = tab_name
-            
+
             # Render the appropriate content based on the tab type
             if i < len(subjects):  # Subject tabs
                 tab_progress(subjects[i])
