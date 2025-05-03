@@ -751,26 +751,35 @@ def tab_visuals():
 def _stay_on_targets():
     st.session_state["selected_tab"] = "Targets"   # will be used by the JS fixer
 
-def _restore_active_tab():
-    """Re‑click the tab whose label is st.session_state['selected_tab']."""
+
+def _restore_active_tab() -> None:
+    """
+    After every rerun, click the tab whose label is stored in
+    st.session_state['selected_tab'] (defaults to "Targets").
+
+    Works on Streamlit Cloud and local installs ≥ 1.29
+    """
     active = st.session_state.get("selected_tab", "Targets")
+
     st.markdown(
         f"""
         <script>
         const desired = `{active}`;
-        const clickTab = () => {{
-            // Grab all Streamlit tab labels once they exist
-            const labels = parent.document.querySelectorAll('div[data-baseweb="tab"] button p');
-            for (const lbl of labels) {{
-                if (lbl.textContent.trim() === desired) {{
-                    lbl.click();
-                    return;               // Done!
-                }}
+
+        function clickDesiredTab() {{
+            // Tabs are <button role="tab">…innerText…</button>
+            const buttons = Array.from(document.querySelectorAll('button[role="tab"]'));
+            const btn = buttons.find(b => b.textContent.trim() === desired);
+            if (btn) {{
+                btn.click();
+            }} else {{
+                // DOM not ready yet—try again in 50 ms
+                setTimeout(clickDesiredTab, 50);
             }}
-            // Labels not in the DOM yet? try again shortly
-            setTimeout(clickTab, 50);
-        }};
-        clickTab();
+        }}
+
+        // kick it off
+        clickDesiredTab();
         </script>
         """,
         unsafe_allow_html=True,
