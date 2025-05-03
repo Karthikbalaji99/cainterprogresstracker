@@ -82,24 +82,36 @@ def _save_state_to_file() -> None:
     }
     url = f"https://api.github.com/repos/{secrets['repo']}/contents/{secrets['file_path']}"
 
-    # Get file SHA first
+    content_b64 = base64.b64encode(json.dumps(st.session_state["db_state"], indent=2).encode("utf-8")).decode("utf-8")
+
+    # Step 1: Check if file exists to get its SHA
     get_resp = requests.get(url, headers=headers)
-    if get_resp.status_code != 200:
-        st.error("❌ Could not get file SHA from GitHub")
+
+    if get_resp.status_code == 200:
+        # File exists, update using SHA
+        sha = get_resp.json()["sha"]
+        payload = {
+            "message": "Update progress.json via Streamlit",
+            "content": content_b64,
+            "branch": secrets["branch"],
+            "sha": sha
+        }
+    elif get_resp.status_code == 404:
+        # File does not exist, create it
+        payload = {
+            "message": "Create progress.json via Streamlit",
+            "content": content_b64,
+            "branch": secrets["branch"]
+        }
+    else:
+        st.error(f"❌ Unexpected error retrieving file: {get_resp.status_code}")
         return
 
-    sha = get_resp.json()["sha"]
-
-    payload = {
-        "message": "Update progress.json via Streamlit",
-        "content": base64.b64encode(json.dumps(st.session_state["db_state"], indent=2).encode("utf-8")).decode("utf-8"),
-        "branch": secrets["branch"],
-        "sha": sha
-    }
-
+    # Step 2: PUT to GitHub
     put_resp = requests.put(url, headers=headers, json=payload)
+
     if put_resp.status_code not in (200, 201):
-        st.error("❌ Failed to update progress.json on GitHub")
+        st.error(f"❌ Failed to save progress.json: {put_resp.json().get('message')}")
 
 # ── Session-state bootstrap ──────────────────────────────────────────────────
 def ensure_state():
