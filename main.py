@@ -749,6 +749,31 @@ def tab_visuals():
         )
     else:
         st.info("No targets defined yet.")
+# ── NEW helper: force‑select the remembered tab on every rerun ────────────────
+def _restore_active_tab():
+    """Re‑click the tab whose label is st.session_state['selected_tab']."""
+    active = st.session_state.get("selected_tab", "Targets")
+    st.markdown(
+        f"""
+        <script>
+        const desired = `{active}`;
+        const clickTab = () => {{
+            // Grab all Streamlit tab labels once they exist
+            const labels = parent.document.querySelectorAll('div[data-baseweb="tab"] button p');
+            for (const lbl of labels) {{
+                if (lbl.textContent.trim() === desired) {{
+                    lbl.click();
+                    return;               // Done!
+                }}
+            }}
+            // Labels not in the DOM yet? try again shortly
+            setTimeout(clickTab, 50);
+        }};
+        clickTab();
+        </script>
+        """,
+        unsafe_allow_html=True,
+    )
 
 # ── Main rendering ───────────────────────────────────────────────────────────
 # Replace the render_app() function with this corrected version:
@@ -757,26 +782,24 @@ def render_app():
     ensure_state()
     subjects = st.session_state["SUBJECTS"]
     tab_labels = subjects + ["Targets", "Visualizations"]
-    
-    # Get the currently selected tab from session state, default to "Targets"
-    selected_tab = st.session_state.get("selected_tab", "Targets")
-    
-    # Calculate the index of the selected tab
-    tab_index = tab_labels.index(selected_tab)
-    
-    # Create tabs with the selected tab active
+
+    # 1️⃣ pull remembered tab (default: Targets)
+    tab_index = tab_labels.index(st.session_state.get("selected_tab", "Targets"))
+
+    # build tabs
     tabs = st.tabs(tab_labels)
-    
-    # Process each tab
+
+    # 2️⃣ inject JS right after tabs are created
+    _restore_active_tab()
+
+    # normal per‑tab rendering
     for i, tab_name in enumerate(tab_labels):
         with tabs[i]:
-            # Only update the session state if we're actually in this tab
-            # This prevents the first subject from always being selected during reruns
+            # keep the memory updated with whichever tab Streamlit thinks is active
             if i == tab_index:
                 st.session_state["selected_tab"] = tab_name
-            
-            # Render the appropriate content based on the tab type
-            if i < len(subjects):  # Subject tabs
+
+            if i < len(subjects):
                 tab_progress(subjects[i])
             elif tab_name == "Targets":
                 tab_targets()
