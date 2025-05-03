@@ -9,10 +9,6 @@ import tempfile, os
 import requests  # Already imported
 import base64
 
-import logging
-logging.basicConfig(level=logging.DEBUG, format="%(asctime)s  %(message)s")
-log = logging.getLogger("debug")
-
 def get_base64_encoded_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
@@ -36,10 +32,9 @@ html, body, [data-testid="stApp"] {{
     background-position: center center;
 }}
 
-/* hide the “Navigation” label above the fake-tabs */
-label[for="nav_radio"] {{
-    display: none !important;
-}}
+div[data-baseweb="tab-list"]        {{ justify-content: space-between !important; }}
+div[data-baseweb="tab"]             {{ flex: 1 !important; font-weight: 700 !important; }}
+div[data-baseweb="tab"] button p    {{ color: white !important; }}
 </style>
 
 <h1 style='text-align:center; margin-top:0.5rem; color:white;'>
@@ -173,10 +168,6 @@ def ensure_state():
         for chap in data["subjects"][subj]["chapters"].keys():
             first_module = list(data["subjects"][subj]["chapters"][chap]["modules"].keys())[0]
             st.session_state.setdefault(f"selected_mod_{subj}_{chap}", first_module)
-
-    # ✅ Fix: Preserve initially selected tab (to avoid fallback on widget rerun)
-    if "selected_tab" not in st.session_state:
-        st.session_state["selected_tab"] = "Targets"
 
 # Constants for target status
 TARGET_STATUS = ["Not started", "<50% done", ">50% done", "Fully achieved"]
@@ -537,55 +528,39 @@ def tab_targets():
             )
 
         # ---- widgets --------------------------------------------------
-        # --- Handle tab preservation with date input ---
-        # Initialize date state before the widget is created
-        if "tgt_due" not in st.session_state:
-            st.session_state["tgt_due"] = date.today()
-
-        due = st.date_input(
-        "Due date",
-        value=st.session_state.get("tgt_due", date.today()),
-        key="tgt_due",
-        on_change=_stay_on_targets
-    )
-
-        
-
-
+        due = st.date_input("Due date", date.today(), key="tgt_due")
 
         st.selectbox(
             "Subject",
             st.session_state["SUBJECTS"],
             key="tgt_subj",
-            on_change=lambda: (_on_subject_change(), _stay_on_targets())
+            on_change=_on_subject_change,
         )
 
-        # Chapter picker
         st.selectbox(
             "Chapter",
             data["subjects"][st.session_state.tgt_subj]["chapters"].keys(),
             key="tgt_chap",
-            on_change=lambda: (_on_chapter_change(), _stay_on_targets())
+            on_change=_on_chapter_change,
         )
 
-        # Module picker
         st.selectbox(
             "Module",
-            data["subjects"][st.session_state.tgt_subj]["chapters"]
-                [st.session_state.tgt_chap]["modules"].keys(),
+            data["subjects"][st.session_state.tgt_subj]["chapters"][
+                st.session_state.tgt_chap
+            ]["modules"].keys(),
             key="tgt_mod",
-            on_change=lambda: (_on_module_change(), _stay_on_targets())
+            on_change=_on_module_change,
         )
 
-        # Phase picker (no cascade needed here, but keep tab memory just in case)
         st.selectbox(
             "Phase",
-            data["subjects"][st.session_state.tgt_subj]["chapters"]
-                [st.session_state.tgt_chap]["modules"]
-                [st.session_state.tgt_mod]["phases"].keys(),
+            data["subjects"][st.session_state.tgt_subj]["chapters"][
+                st.session_state.tgt_chap
+            ]["modules"][st.session_state.tgt_mod]["phases"].keys(),
             key="tgt_phase",
-            on_change=_stay_on_targets
         )
+
         desc = st.text_area(
             "Description: elaborate your target of the day here", key="tgt_desc"
         )
@@ -735,7 +710,8 @@ def tab_visuals():
     st.markdown("---")
     st.subheader("Target Status Distribution")
     tgt = st.session_state["db_state"]["targets"]
- 
+    # ... rest unchanged
+    tgt = st.session_state["db_state"]["targets"]
     if tgt:
         counts = {s: 0 for s in TARGET_STATUS}
         for t in tgt: counts[t["status"]] += 1
@@ -751,48 +727,19 @@ def tab_visuals():
         )
     else:
         st.info("No targets defined yet.")
-# ── NEW helper: force‑select the remembered tab on every rerun ────────────────
-# ── Helper to remember that we want to stay on Targets ───────────────────────
-
-def _stay_on_targets():
-    # Called by every widget that should keep us on the Targets tab
-    log.debug("→ _stay_on_targets() called  — setting selected_tab = 'Targets'")
-    st.session_state["selected_tab"] = "Targets"
-
-
 
 # ── Main rendering ───────────────────────────────────────────────────────────
-# Replace the render_app() function with this corrected version:
-
 def render_app():
     ensure_state()
-    st.write(
-    "DEBUG · selected_tab:", st.session_state.get("selected_tab"),
-    " —  time:", date.today().isoformat()
-)
-
-    # ---------- NEW top‑level navigation (radio looks like tabs) ----------
     subjects = st.session_state["SUBJECTS"]
-    nav_items = subjects + ["Targets", "Visualizations"]
-
-    active = st.radio(
-        "Navigation",            # label hidden with CSS later
-        nav_items,
-        horizontal=True,
-        index=nav_items.index(st.session_state.get("selected_tab", "Targets")),
-        key="nav_radio",
-    )
-
-    st.session_state["selected_tab"] = active      # remember choice
-    # ----------------------------------------------------------------------
-
-    if active in subjects:
-        tab_progress(active)
-    elif active == "Targets":
+    tabs = st.tabs(subjects + ["Targets", "Visualizations"])
+    for i, subj in enumerate(subjects):
+        with tabs[i]:
+            tab_progress(subj)
+    with tabs[-2]:
         tab_targets()
-    else:  # Visualizations
+    with tabs[-1]:
         tab_visuals()
-
 
 # ── Run app ──────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
