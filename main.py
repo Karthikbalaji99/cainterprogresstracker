@@ -740,14 +740,24 @@ def tab_visuals():
 def render_app():
     ensure_state()
     subjects = st.session_state["SUBJECTS"]
-    tabs = st.tabs(subjects + ["Targets", "Visualizations"])
+    tab_labels = subjects + ["Targets", "Visualizations"]
+    selected_tab = st.session_state.get("selected_tab", "Targets")
+    tab_index = tab_labels.index(selected_tab)
+    tabs = st.tabs(tab_labels)
+
     for i, subj in enumerate(subjects):
         with tabs[i]:
+            st.session_state["selected_tab"] = subj
             tab_progress(subj)
-    with tabs[-2]:
-        tab_targets()
-    with tabs[-1]:
-        tab_visuals()
+
+        with tabs[-2]:
+            st.session_state["selected_tab"] = "Targets"
+            tab_targets()
+
+        with tabs[-1]:
+            st.session_state["selected_tab"] = "Visualizations"
+            tab_visuals()
+
 
 # ── Run app ──────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
