@@ -532,7 +532,11 @@ def tab_targets():
             )
 
         # ---- widgets --------------------------------------------------
-        due = st.date_input("Due date", date.today(), key="tgt_due")
+        if "tgt_due" not in st.session_state:
+            st.session_state["tgt_due"] = date.today()
+
+        due = st.date_input("Due date", st.session_state["tgt_due"], key="tgt_due")
+
 
         st.selectbox(
             "Subject",
