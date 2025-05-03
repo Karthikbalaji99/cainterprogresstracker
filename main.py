@@ -535,7 +535,9 @@ def tab_targets():
         if "tgt_due" not in st.session_state:
             st.session_state["tgt_due"] = date.today()
 
-        due = st.date_input("Due date", st.session_state["tgt_due"], key="tgt_due")
+        due = st.date_input("Due date", st.session_state.get("tgt_due", date.today()), key="tgt_due_widget")
+        st.session_state["tgt_due"] = due
+
 
 
         st.selectbox(
@@ -718,8 +720,7 @@ def tab_visuals():
     st.markdown("---")
     st.subheader("Target Status Distribution")
     tgt = st.session_state["db_state"]["targets"]
-    # ... rest unchanged
-    tgt = st.session_state["db_state"]["targets"]
+ 
     if tgt:
         counts = {s: 0 for s in TARGET_STATUS}
         for t in tgt: counts[t["status"]] += 1
