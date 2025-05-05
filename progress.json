@@ -2823,9 +2823,10 @@
             "Material Cost": {
               "phases": {
                 "Initial": {
-                  "status": 0,
+                  "status": 20,
                   "notes": "",
-                  "lAS t_updated": ""
+                  "lAS t_updated": "",
+                  "last_updated": "2025-05-05"
                 },
                 "MTPs": {
                   "status": 0,
