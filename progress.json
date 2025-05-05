@@ -4427,6 +4427,19 @@
       "explanation": "will solve doubts with rushi today it self",
       "locked": true,
       "update_date": "2025-05-05"
+    },
+    {
+      "id": "380eff4e-2324-4153-bf31-00dd2853e8ce",
+      "date": "2025-05-05",
+      "subject": "Taxation",
+      "chapter": "Goods and Services Tax",
+      "module": "Supply Under GST",
+      "phase": "Initial",
+      "description": "will comeplete 4 chps of gst with module questions",
+      "status": "Not started",
+      "explanation": "",
+      "locked": false,
+      "update_date": null
     }
   ]
 }
