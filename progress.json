@@ -4440,6 +4440,19 @@
       "explanation": "",
       "locked": false,
       "update_date": null
+    },
+    {
+      "id": "ceaf765e-5094-41e8-886e-f0cf986e2009",
+      "date": "2025-05-05",
+      "subject": "Financial Management",
+      "chapter": "Financing Decisions - Leverages",
+      "module": "Financing Decisions - Leverages",
+      "phase": "Initial",
+      "description": "will complete leverage chapter with module based questions and model test paper questions",
+      "status": "Not started",
+      "explanation": "",
+      "locked": false,
+      "update_date": null
     }
   ]
 }
