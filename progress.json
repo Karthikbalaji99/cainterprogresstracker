@@ -4410,10 +4410,10 @@
       "module": "Strategic Choices",
       "phase": "Initial",
       "description": "today one will complete all questions of model test paper and case based mcq",
-      "status": "Not started",
+      "status": "Fully achieved",
       "explanation": "",
-      "locked": false,
-      "update_date": null
+      "locked": true,
+      "update_date": "2025-05-05"
     },
     {
       "id": "d5ec8aa0-761c-40c2-b500-d711555faed3",
