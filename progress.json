@@ -4423,10 +4423,10 @@
       "module": "Budgets and Budgetary Control",
       "phase": "Initial",
       "description": "will complete all its  pending questions ",
-      "status": "Not started",
-      "explanation": "",
-      "locked": false,
-      "update_date": null
+      "status": "<50% done",
+      "explanation": "will solve doubts with rushi today it self",
+      "locked": true,
+      "update_date": "2025-05-05"
     }
   ]
 }
