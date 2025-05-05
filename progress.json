@@ -4327,9 +4327,10 @@
             "Strategic Choices": {
               "phases": {
                 "Initial": {
-                  "status": 0,
+                  "status": 65,
                   "notes": "",
-                  "lAS t_updated": ""
+                  "lAS t_updated": "",
+                  "last_updated": "2025-05-05"
                 },
                 "MTPs": {
                   "status": 0,
@@ -4443,6 +4444,19 @@
     },
     {
       "id": "ceaf765e-5094-41e8-886e-f0cf986e2009",
+      "date": "2025-05-05",
+      "subject": "Financial Management",
+      "chapter": "Financing Decisions - Leverages",
+      "module": "Financing Decisions - Leverages",
+      "phase": "Initial",
+      "description": "will complete leverage chapter with module based questions and model test paper questions",
+      "status": "Not started",
+      "explanation": "",
+      "locked": false,
+      "update_date": null
+    },
+    {
+      "id": "df804a81-cdb0-441e-bc22-58023a79162a",
       "date": "2025-05-05",
       "subject": "Financial Management",
       "chapter": "Financing Decisions - Leverages",
