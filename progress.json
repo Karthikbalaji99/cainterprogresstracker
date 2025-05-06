@@ -4439,9 +4439,9 @@
       "phase": "Initial",
       "description": "will comeplete 4 chps of gst with module questions",
       "status": "Not started",
-      "explanation": "",
-      "locked": false,
-      "update_date": null
+      "explanation": "Have to do it",
+      "locked": true,
+      "update_date": "2025-05-06"
     },
     {
       "id": "ceaf765e-5094-41e8-886e-f0cf986e2009",
