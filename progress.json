@@ -4494,6 +4494,19 @@
       "explanation": "",
       "locked": false,
       "update_date": null
+    },
+    {
+      "id": "03f3be9e-d0ff-4cb5-99d7-838ec9f1f935",
+      "date": "2025-05-06",
+      "subject": "Financial Management",
+      "chapter": "Scope and Objectives of FM",
+      "module": "Scope and Objectives of FM",
+      "phase": "Initial",
+      "description": "Have to complete revision of chap",
+      "status": "Not started",
+      "explanation": "",
+      "locked": false,
+      "update_date": null
     }
   ]
 }
