@@ -4507,6 +4507,19 @@
       "explanation": "",
       "locked": false,
       "update_date": null
+    },
+    {
+      "id": "efc5344d-d367-41ec-92c4-9880b839ad63",
+      "date": "2025-05-06",
+      "subject": "Taxation",
+      "chapter": "Goods and Services Tax",
+      "module": "Supply Under GST",
+      "phase": "Initial",
+      "description": "Have to complete revision of chap ",
+      "status": "Not started",
+      "explanation": "",
+      "locked": false,
+      "update_date": null
     }
   ]
 }
