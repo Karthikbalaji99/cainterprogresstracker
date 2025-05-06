@@ -4481,6 +4481,19 @@
       "explanation": "",
       "locked": false,
       "update_date": null
+    },
+    {
+      "id": "29e88f4d-ede0-4ed2-abbe-ba4e29407b06",
+      "date": "2025-05-06",
+      "subject": "Strategic Management",
+      "chapter": "Strategic Choices",
+      "module": "Strategic Choices",
+      "phase": "Initial",
+      "description": "Have to complete 4 questions",
+      "status": "Not started",
+      "explanation": "",
+      "locked": false,
+      "update_date": null
     }
   ]
 }
