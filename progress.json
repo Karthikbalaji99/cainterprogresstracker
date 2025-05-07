@@ -4520,6 +4520,19 @@
       "explanation": "Didn't get time",
       "locked": true,
       "update_date": "2025-05-07"
+    },
+    {
+      "id": "6e390348-6378-4a52-9527-e00ee65cb08b",
+      "date": "2025-05-08",
+      "subject": "Taxation",
+      "chapter": "Goods and Services Tax",
+      "module": "Supply Under GST",
+      "phase": "Initial",
+      "description": "Will solve module sums ",
+      "status": "Not started",
+      "explanation": "",
+      "locked": false,
+      "update_date": null
     }
   ]
 }
