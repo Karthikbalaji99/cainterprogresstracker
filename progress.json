@@ -4491,9 +4491,9 @@
       "phase": "Initial",
       "description": "Have to complete 4 questions",
       "status": "Not started",
-      "explanation": "",
-      "locked": false,
-      "update_date": null
+      "explanation": "Completed",
+      "locked": true,
+      "update_date": "2025-05-07"
     },
     {
       "id": "03f3be9e-d0ff-4cb5-99d7-838ec9f1f935",
