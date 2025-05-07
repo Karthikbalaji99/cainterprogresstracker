@@ -4546,6 +4546,19 @@
       "explanation": "",
       "locked": false,
       "update_date": null
+    },
+    {
+      "id": "65033b27-9994-40ef-a983-462527db78c8",
+      "date": "2025-05-08",
+      "subject": "Financial Management",
+      "chapter": "Financing Decisions - Leverages",
+      "module": "Financing Decisions - Leverages",
+      "phase": "Initial",
+      "description": "Will revise and solve minimum 4 sums",
+      "status": "Not started",
+      "explanation": "",
+      "locked": false,
+      "update_date": null
     }
   ]
 }
