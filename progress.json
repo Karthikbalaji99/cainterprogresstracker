@@ -4478,9 +4478,9 @@
       "phase": "Initial",
       "description": "Have to complete 4 sums",
       "status": "Not started",
-      "explanation": "",
-      "locked": false,
-      "update_date": null
+      "explanation": "Due to costing hw couldn't do it",
+      "locked": true,
+      "update_date": "2025-05-07"
     },
     {
       "id": "29e88f4d-ede0-4ed2-abbe-ba4e29407b06",
