@@ -4504,9 +4504,9 @@
       "phase": "Initial",
       "description": "Have to complete revision of chap",
       "status": "Not started",
-      "explanation": "",
-      "locked": false,
-      "update_date": null
+      "explanation": "Didn't get time",
+      "locked": true,
+      "update_date": "2025-05-07"
     },
     {
       "id": "efc5344d-d367-41ec-92c4-9880b839ad63",
