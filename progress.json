@@ -2305,9 +2305,10 @@
             "Supply Under GST": {
               "phases": {
                 "Initial": {
-                  "status": 0,
-                  "notes": "",
-                  "lAS t_updated": ""
+                  "status": 100,
+                  "notes": "Module sums all done",
+                  "lAS t_updated": "",
+                  "last_updated": "2025-05-09"
                 },
                 "MTPs": {
                   "status": 0,
