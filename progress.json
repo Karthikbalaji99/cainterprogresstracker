@@ -3889,9 +3889,10 @@
             "Financing Decisions - Leverages": {
               "phases": {
                 "Initial": {
-                  "status": 0,
-                  "notes": "",
-                  "lAS t_updated": ""
+                  "status": 67,
+                  "notes": "Mostly sums are done ",
+                  "lAS t_updated": "",
+                  "last_updated": "2025-05-09"
                 },
                 "MTPs": {
                   "status": 0,
