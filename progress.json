@@ -2842,9 +2842,10 @@
                   "last_updated": "2025-05-14"
                 },
                 "Past Year QPs": {
-                  "status": 0,
+                  "status": 100,
                   "notes": "",
-                  "lAS t_updated": ""
+                  "lAS t_updated": "",
+                  "last_updated": "2025-05-14"
                 },
                 "Revision": {
                   "status": 0,
