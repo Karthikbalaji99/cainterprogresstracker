@@ -4628,10 +4628,10 @@
       "module": "Ethics and Terms of Audit Engagements",
       "phase": "Initial",
       "description": "sa 550",
-      "status": "Not started",
+      "status": "Fully achieved",
       "explanation": "",
-      "locked": false,
-      "update_date": null
+      "locked": true,
+      "update_date": "2025-07-31"
     }
   ]
 }
