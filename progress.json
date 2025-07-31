@@ -4576,8 +4576,8 @@
       "description": "",
       "status": "Not started",
       "explanation": "",
-      "locked": false,
-      "update_date": null
+      "locked": true,
+      "update_date": "2025-07-31"
     },
     {
       "id": "b466c296-cf57-477c-9014-e8624b9eccce",
