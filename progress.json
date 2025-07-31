@@ -4591,6 +4591,19 @@
       "explanation": "",
       "locked": false,
       "update_date": null
+    },
+    {
+      "id": "7842dd6f-22cb-43e4-b01a-52e5abfc2c52",
+      "date": "2025-07-31",
+      "subject": "Advanced Accounting",
+      "chapter": "Assets Based Accounting Standards",
+      "module": "AS 10 - Property, Plan and Equipment",
+      "phase": "Initial",
+      "description": "",
+      "status": "Not started",
+      "explanation": "",
+      "locked": false,
+      "update_date": null
     }
   ]
 }
