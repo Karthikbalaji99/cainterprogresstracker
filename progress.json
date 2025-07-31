@@ -4619,6 +4619,19 @@
       "explanation": "",
       "locked": false,
       "update_date": null
+    },
+    {
+      "id": "ad298dcd-5abc-4702-a72b-154d3b5e22cb",
+      "date": "2025-07-31",
+      "subject": "Audit and Ethics",
+      "chapter": "Module 2",
+      "module": "Ethics and Terms of Audit Engagements",
+      "phase": "Initial",
+      "description": "sa 550",
+      "status": "Not started",
+      "explanation": "",
+      "locked": false,
+      "update_date": null
     }
   ]
 }
