@@ -4587,10 +4587,10 @@
       "module": "Process and Operation Costing",
       "phase": "Initial",
       "description": "complete remaining ",
-      "status": "Not started",
+      "status": ">50% done",
       "explanation": "",
-      "locked": false,
-      "update_date": null
+      "locked": true,
+      "update_date": "2025-07-31"
     },
     {
       "id": "7842dd6f-22cb-43e4-b01a-52e5abfc2c52",
