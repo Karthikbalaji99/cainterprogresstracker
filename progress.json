@@ -7,9 +7,10 @@
             "Introduction to Accounting Standards": {
               "phases": {
                 "Initial": {
-                  "status": 0,
+                  "status": 32,
                   "notes": "",
-                  "lAS t_updated": ""
+                  "lAS t_updated": "",
+                  "last_updated": "2025-07-31"
                 },
                 "MTPs": {
                   "status": 0,
