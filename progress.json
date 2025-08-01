@@ -4615,10 +4615,10 @@
       "module": "AS 10 - Property, Plan and Equipment",
       "phase": "Initial",
       "description": "",
-      "status": "Not started",
+      "status": "Fully achieved",
       "explanation": "",
-      "locked": false,
-      "update_date": null
+      "locked": true,
+      "update_date": "2025-08-01"
     },
     {
       "id": "ad298dcd-5abc-4702-a72b-154d3b5e22cb",
