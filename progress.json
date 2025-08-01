@@ -400,10 +400,10 @@
             "AS 10 - Property, Plan and Equipment": {
               "phases": {
                 "Initial": {
-                  "status": 50,
+                  "status": 100,
                   "notes": "",
                   "lAS t_updated": "",
-                  "last_updated": "2025-07-31"
+                  "last_updated": "2025-08-01"
                 },
                 "MTPs": {
                   "status": 0,
