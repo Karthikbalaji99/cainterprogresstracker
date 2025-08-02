@@ -2352,9 +2352,10 @@
             "Charge of GST": {
               "phases": {
                 "Initial": {
-                  "status": 0,
+                  "status": 70,
                   "notes": "",
-                  "lAS t_updated": ""
+                  "lAS t_updated": "",
+                  "last_updated": "2025-08-02"
                 },
                 "MTPs": {
                   "status": 0,
