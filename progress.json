@@ -1795,9 +1795,10 @@
             "The Foregin Exchange Management Acts, 1999": {
               "phases": {
                 "Initial": {
-                  "status": 0,
+                  "status": 50,
                   "notes": "",
-                  "lAS t_updated": ""
+                  "lAS t_updated": "",
+                  "last_updated": "2025-08-02"
                 },
                 "MTPs": {
                   "status": 0,
