@@ -1375,9 +1375,10 @@
             "Prospectus and Allotment to Securities": {
               "phases": {
                 "Initial": {
-                  "status": 0,
+                  "status": 8,
                   "notes": "",
-                  "lAS t_updated": ""
+                  "lAS t_updated": "",
+                  "last_updated": "2025-09-28"
                 },
                 "MTPs": {
                   "status": 0,
