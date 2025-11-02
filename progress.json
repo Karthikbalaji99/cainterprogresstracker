@@ -46,9 +46,10 @@
             "Framework of Preparation and Presentation for Financial Statements": {
               "phases": {
                 "Initial": {
-                  "status": 0,
+                  "status": 100,
                   "notes": "",
-                  "lAS t_updated": ""
+                  "lAS t_updated": "",
+                  "last_updated": "2025-11-02"
                 },
                 "MTPs": {
                   "status": 0,
